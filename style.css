@@ -1,0 +1,252 @@
+
+/* CONFIGURAÇÃO GERAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* FUNDO CRIATIVO */
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background-color: #f4f1e8;
+    background-image:
+        radial-gradient(circle at 10% 15%, rgba(201, 40, 40, 0.10) 0, transparent 20%),
+        radial-gradient(circle at 90% 40%, rgba(22, 131, 74, 0.10) 0, transparent 22%),
+        radial-gradient(circle at 15% 85%, rgba(229, 179, 35, 0.13) 0, transparent 20%),
+        repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 35px,
+            rgba(0, 0, 0, 0.018) 36px,
+            transparent 37px
+        );
+    color: #242424;
+    line-height: 1.8;
+}
+
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(135deg, #101010, #292929);
+    color: white;
+    text-align: center;
+    padding: 65px 20px;
+    border-bottom: 7px solid #e5b323;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 19px;
+    color: #e5b323;
+    font-weight: bold;
+}
+
+/* MENU DE NAVEGAÇÃO */
+nav {
+    background-color: #c92828;
+    padding: 17px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffdc55;
+    border-bottom: 2px solid #ffdc55;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* SEÇÕES */
+section {
+    background-color: #ffffff;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    border-left: 6px solid #16834a;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+section:hover {
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.13);
+}
+
+/* TÍTULOS */
+h2 {
+    color: #c92828;
+    margin-bottom: 22px;
+    font-size: 27px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #e5b323;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #16834a;
+    margin: 18px 0 10px;
+    font-size: 21px;
+}
+
+p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* IMAGENS */
+img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 25px 0;
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.01);
+    filter: contrast(1.08);
+}
+
+/* ARTIGOS */
+article {
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+/* BOTÕES */
+button {
+    background-color: #171717;
+    color: #ffdc55;
+    border: 2px solid #e5b323;
+    padding: 13px 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #c92828;
+    color: white;
+    border-color: #c92828;
+    transform: translateY(-3px);
+}
+
+/* CURIOSIDADES */
+.curiosidade {
+    background-color: #fff5d8;
+    color: #242424;
+    padding: 18px;
+    margin-top: 18px;
+    border-left: 5px solid #e5b323;
+    border-radius: 5px;
+}
+
+/* FRASE DE DESTAQUE */
+.frase {
+    background-color: #171717;
+    color: #ffdc55;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 19px;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #111111;
+    color: white;
+    padding: 30px;
+    border-top: 7px solid #e5b323;
+}
+
+footer ul {
+    max-width: 900px;
+    margin: auto;
+    padding-left: 25px;
+}
+
+footer li {
+    margin-bottom: 12px;
+}
+
+footer a {
+    color: #ffdc55;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 7px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
